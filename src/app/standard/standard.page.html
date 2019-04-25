@@ -1,0 +1,109 @@
+<!-- 
+  Author: Anggi Mitra Pernando
+  publish: 25 April 2019 
+-->
+
+
+<ion-header>
+  <ion-toolbar color="secondary">
+    <ion-buttons slot="start">
+        <ion-icon name="calculator" slot="icon-only"></ion-icon>
+    </ion-buttons>
+    <ion-title>Calculator</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content text-right>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-label> {{ resultLog }} </ion-label>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <h1> {{ result }} </h1>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+<ion-footer>
+    <ion-grid slot="fixed">
+        <ion-row>
+            <ion-col no-padding>
+              <ion-button expand="full" (click)="reset()" color="danger">
+                  <ion-icon name="refresh" slot="icon-only"></ion-icon>
+              </ion-button>
+            </ion-col>
+            <ion-col no-padding>
+              <ion-button expand="full" (click)="kuadrat()"> <ion-label  style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif">X<ion-badge>2</ion-badge></ion-label></ion-button>
+            </ion-col>
+            <ion-col no-padding>
+              <ion-button expand="full" (click)="persent()">%</ion-button>
+            </ion-col>
+             <ion-col size="4" no-padding>
+              <ion-button expand="full" (click)="delete()">
+                  <ion-icon name="backspace" slot="icon-only"></ion-icon>
+              </ion-button>
+            </ion-col>
+          </ion-row>
+        <ion-row>
+          <ion-col no-padding>
+            <ion-button expand="full" (click)="one()">1</ion-button>
+          </ion-col>
+          <ion-col no-padding>
+            <ion-button expand="full" (click)="two()">2</ion-button>
+          </ion-col>
+          <ion-col no-padding>
+            <ion-button expand="full" (click)="three()">3</ion-button>
+          </ion-col>
+           <ion-col size="4" no-padding>
+            <ion-button expand="full" (click)="point()">.</ion-button>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col no-padding>
+              <ion-button expand="full" (click)="four()">4</ion-button>
+            </ion-col>
+            <ion-col no-padding>
+              <ion-button expand="full" (click)="five()">5</ion-button>
+            </ion-col>
+            <ion-col no-padding>
+              <ion-button expand="full" (click)="six()">6</ion-button>
+            </ion-col>
+             <ion-col size="4" no-padding>
+              <ion-button expand="full" (click)="tambah()">+</ion-button>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+              <ion-col no-padding>
+                <ion-button expand="full" (click)="sevent()">7</ion-button>
+              </ion-col>
+              <ion-col no-padding>
+                <ion-button expand="full" (click)="eight()">8</ion-button>
+              </ion-col>
+              <ion-col no-padding>
+                <ion-button expand="full" (click)="nine()">9</ion-button>
+              </ion-col>
+               <ion-col size="4" no-padding>
+                <ion-button expand="full" (click)="kurang()">-</ion-button>
+              </ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col no-padding>
+                  <ion-button expand="full" (click)="kali()">x</ion-button>
+                </ion-col>
+                <ion-col no-padding>
+                  <ion-button expand="full" (click)="bagi()">/</ion-button>
+                </ion-col>
+                <ion-col no-padding>
+                  <ion-button expand="full" (click)="zero()">0</ion-button>
+                </ion-col>
+                 <ion-col size="4" no-padding>
+                  <ion-button expand="full" (click)="samaDengan()" color="success">
+                    <strong>=</strong>
+                  </ion-button>
+                </ion-col>
+              </ion-row>
+      </ion-grid>
+</ion-footer>
